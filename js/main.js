@@ -65,7 +65,15 @@ $(document).mousedown(function(event) {
         default:
     }
 });
-
+// Keyboard Controls
+$(document).keypress(function(event) {
+    switch (event.which) {
+         case 119:
+	         leftClick();
+                 break;
+         default:
+    }
+});
 /* Start / Spash screen. Called when document is ready */
 function startScreen(){
 	currentState = startScreenState;
